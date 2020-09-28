@@ -29,7 +29,7 @@ pipeline {
             steps {
                 script {
 
-                    sh 'git clone https://github.com/robsonagapito/integration-testing-java.git'
+                    sh 'git clone https://github.com/valterteodorobsi/integration.git'
                     sh 'cd integration-testing-java && mvn verify'
                 }
             }
