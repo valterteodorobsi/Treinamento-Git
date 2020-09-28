@@ -10,13 +10,7 @@ pipeline {
                 }
             }
         }
-        stage('SonarQube'){
-                    steps {
-                        script{
-                            sh 'comando do sonarqube'
-                        }
-                    }
-                }
+       
         stage('Unit Testing'){
             steps {
                 script{
