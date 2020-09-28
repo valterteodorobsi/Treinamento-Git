@@ -23,8 +23,8 @@ pipeline {
             steps {
                 script {
 
-                    sh 'git clone https://github.com/valterteodorobsi/integration.git'
-                    sh 'cd integration-testing_java && mvn verify'
+                    sh 'git clone https://github.com/valterteodorobsi/integration-testing-java-team09.git'
+                    sh 'cd integration-testing-java-team09 && mvn verify'
                 }
             }
         }
@@ -32,7 +32,7 @@ pipeline {
             steps {
                     cucumber buildStatus: "UNSTABLE",
                         fileIncludePattern: "**/CucumberReport.json",
-                        jsonReportDirectory: 'integration-testing_java/target/reports'
+                        jsonReportDirectory: 'integration-testing-java-team09/target/reports'
 
             }
         }
